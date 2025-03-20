@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --font-roboto-condense: "Roboto Condensed", sans-serif;
+    --color-primary-1000: #121212; /*bg-main*/
+    --color-primary-900: #05030C; /*text-invert*/
+    --color-primary-700: #100823; /*section box shadow*/
+    --color-primary-800: #0B0617; /*section*/
+    --color-primary-600: #1B0E3B; /*card*/
+    --color-primary-500: #251452;
+    --color-primary-400: #3E2F64;
+    --color-primary-300: #674EA7;
+    --color-primary-200: #8677AC; /*icons dark*/
+    --color-primary-100: #D1B6FF; /*icons light*/
+    --color-secondary-100: #E5E7EB; /*text*/
+    --color-secondary-400: #00FFB3; /*logo*/
+    --color-secondary-600: #00FF7F; /*headings*/
+    --color-accent-600: #FFC300;
+    --color-accent-400: #FFD800;
+    --color-negative-600: #B23A48;
+    --color-disabled-600: #777777;
+}
