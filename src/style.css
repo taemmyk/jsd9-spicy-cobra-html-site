@@ -5,16 +5,16 @@
     --font-orbitron: "Orbitron", sans-serif;
     --font-roboto: "Roboto", sans-serif;
     --font-roboto-condense: "Roboto Condensed", sans-serif;
-    --color-primary-1000: #121212; /*bg-main*/
-    --color-primary-900: #05030C; /*text-invert*/
-    --color-primary-700: #100823; /*section box shadow*/
-    --color-primary-800: #0B0617; /*section*/
-    --color-primary-600: #1B0E3B; /*card*/
+    --color-primary-1000: #121212; /*main-bg*/
+    --color-primary-900: #1E1B2D; /*main-section*/
+    --color-primary-800: #05030C; /*text-invert*/
+    --color-primary-700: #100823; /*shadow*/
+    --color-primary-600: #1B0E3B; /*card-bg*/
     --color-primary-500: #251452;
     --color-primary-400: #3E2F64;
     --color-primary-300: #674EA7;
-    --color-primary-200: #8677AC; /*icons dark*/
-    --color-primary-100: #D1B6FF; /*icons light*/
+    --color-primary-200: #8677AC;
+    --color-primary-100: #D1B6FF; /*icon*/
     --color-secondary-100: #E5E7EB; /*text*/
     --color-secondary-400: #00FFB3; /*logo*/
     --color-secondary-600: #00FF7F; /*headings*/
