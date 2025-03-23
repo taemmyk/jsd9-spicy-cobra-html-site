@@ -3,40 +3,164 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+        type="image/svg+xml"
+        href="/vite.svg" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
   <title>Spicy Cobra</title>
 </head>
 
-<body class="text-secondary-100 bg-primary-1000">
+<body class="text-secondary-100 bg-primary-1000 font-orbitron">
   <main class="flex-col">
-    <div class="m-8 p-4 bg-primary-800 rounded-2xl shadow-2xl">
-      <h1 class="font-orbitron text-secondary-600 text-4xl drop-shadow-[0px_0px_10px_rgba(0,255,179,1)]">Cobra Tagline
-      </h1>
-      <h2 class="font-orbitron text-secondary-400 text-4xl ">Headings</h2>
-      <p class="font-orbitron text-xl">Cobra - Orbitron</p>
-      <p class="font-roboto text-xl">Cobra - Roboto</p>
-      <p class="font-roboto-condense text-xl">Cobra - Roboto Condense</p>
-    </div>
-    <div class="m-8 p-4 bg-primary-800 rounded-2xl grid grid-cols-3 gap-4">
-      <div class="bg-primary-600 rounded-2xl shadow-2xl">
-        <h3 class="font-bold">Card Title</h3>
-        <h4 class="font-semibold">Card Subheading</h4>
-        <p>Card Content</p>
+    <section class="bg-primary-900 p-8 rounded-2xl-lg">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <div class="relative w-full h-full">
+          <img src="/src/Home-Sweet-Home-Survive.jpg"
+               alt="Home Sweet Home Survive"
+               class="rounded-2xl-lg w-full" />
+          <button
+                  class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-primary-600  rounded-2xl-full p-3 hover:bg-primary-600">
+            ❮
+          </button>
+          <button
+                  class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-primary-600  rounded-2xl-full p-3 hover:bg-primary-600">
+            ❯
+          </button>
+        </div>
+
+        <div class="space-y-6 bg-primary-600 px-4 py-8">
+          <h1 class="text-secondary-400 font-medium text-2xl">
+            Yorem ipsum dolor sit amet consectetur
+          </h1>
+          <p class="font-roboto">
+            Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet
+            odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper
+            iaculis condimentum ac, vestibulum eu nisl.
+          </p>
+
+          <div class="flex items-center mx-auto justify-center">
+            <div class="relative inline-block bg-[#d4d4d4]">
+              <select
+                      class="text-primary-800 text-xl font-roboto font-black  bg-transparent border border-primary-800  px-1 py-1 appearance-none focus:outline-none">
+                <option value="590">Edition A THB 590 ▼</option>
+                <option value="790">Edition B THB 790 ▼</option>
+                <option value="1190">Edition C THB 1,190 ▼</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex gap-4 mx-auto justify-center">
+            <button
+                    class="bg-accent-600 px-2 py-1 rounded-2xl text-primary-800 font-roboto font-medium hover:bg-accent-400">
+              BUY NOW
+            </button>
+            <button
+                    class="bg-primary-100 px-2 py-1 rounded-2xl text-primary-800 font-roboto font-medium hover:bg-primary-200">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="bg-primary-600 rounded-2xl shadow-2xl">
+    </section>
+
+    <section class="bg-primary-900 p-8 rounded-2xl-lg">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="grid grid-rows-2 gap-4">
+          <div class="bg-primary-600 p-4 rounded-2xl text-center">
+            <h2 class="text-secondary-100 font-medium pb-8">RELEASE SCHEDULE</h2>
+            <p class="font-roboto">1st April 2025</p>
+          </div>
+
+          <div class="bg-primary-600 p-4 rounded-2xl text-center">
+            <h2 class="text-secondary-100 font-medium pb-8">LAST UPDATE</h2>
+            <p class="font-roboto">1st April 2025</p>
+          </div>
+        </div>
+
+        <div class="grid grid-rows-2 gap-4">
+          <div class="bg-primary-600 p-4 rounded-2xl text-center">
+            <h2 class="text-secondary-100 font-medium pb-4">PLATFORM</h2>
+            <div class="flex justify-center gap-2 mt-2">
+              <div class="bg-[#d4d4d4] rounded-full w-8 h-8 "></div>
+              <div class="bg-[#d4d4d4] rounded-full w-8 h-8 "></div>
+            </div>
+          </div>
+
+          <div class="bg-primary-600 p-4 rounded-2xl text-center">
+            <h2 class="text-secondary-100 font-medium pb-8">LANGUAGE</h2>
+            <div>🇹🇭 🇯🇵 🏴󠁧󠁢󠁥󠁮󠁧󠁿 🇪🇦</div>
+          </div>
+        </div>
+
+        <div class="gap-4">
+          <div class="bg-primary-600 p-4 rounded-2xl text-center">
+            <h2 class="text-secondary-100 font-medium">DEVELOPER</h2>
+            <div class="flex place-items-center p-6 rounded-lg justify-center">
+
+              <div class="w-16 h-16 bg-[#d4d4d4] rounded-full"></div>
+
+              <div class="ml-4">
+                <h2 class="text-secondary-100 text-2xl font-roboto">developer</h2>
+                <p class="text-secondary-100 text-base font-roboto">Bangkok</p>
+              </div>
+            </div>
+            <div class="flex justify-around text-sm">
+              <p class="text-primary-100 font-light font-roboto">👍 000,000</p>
+              <p class="text-primary-100 font-light font-roboto">👎 000,000</p>
+            </div>
+            <div class="bg-primary-600 p-4 rounded-2xl text-center">
+              <button
+                      class="bg-primary-100 text-primary-800 font-roboto font-medium px-4 py-2 rounded-2xl">DONATE</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-primary-600 rounded-2xl shadow-2xl">
+    </section>
+
+    <section class="bg-primary-900 p-8 rounded-2xl-lg">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-primary-600 p-6 rounded-2xl">
+          <h3 class="text-secondary-400 font-medium text-xl mb-4 text-center mx-auto pb-8">Edition A</h3>
+          <ul class="text-sm text-secondary-100 font-roboto space-y-2 pb-8 pl-6">
+            <li>- Vorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>- Nunc vulputate libero et velit interdum.</li>
+            <li>- Ac aliquet odio mattis.</li>
+            <li>- Class aptent taciti sociosqu ad litora torquent.</li>
+          </ul>
+          <p class="text-secondary-100 text-lg font-roboto font-bold mb-4 text-center mx-auto">THB 590</p>
+        </div>
+
+        <div class="bg-primary-600 p-6 rounded-2xl">
+          <h3 class="text-secondary-400 font-medium text-xl mb-4 text-center mx-auto pb-8">Edition B</h3>
+          <ul class="text-sm text-secondary-100 font-roboto space-y-2 pb-8 pl-6">
+            <li>- Vorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>- Nunc vulputate libero et velit interdum.</li>
+            <li>- Ac aliquet odio mattis.</li>
+            <li>- Class aptent taciti sociosqu ad litora torquent.</li>
+          </ul>
+          <p class="text-secondary-100 text-lg font-roboto font-bold mb-4 text-center mx-auto">THB 790</p>
+        </div>
+
+        <div class="bg-primary-600 p-6 rounded-2xl">
+          <h3 class="text-secondary-400 font-medium text-xl mb-4 text-center mx-auto pb-8">Edition C</h3>
+          <ul class="text-sm text-secondary-100 font-roboto space-y-2 pb-8 pl-6">
+            <li>- Vorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>- Nunc vulputate libero et velit interdum.</li>
+            <li>- Ac aliquet odio mattis.</li>
+            <li>- Class aptent taciti sociosqu ad litora torquent.</li>
+          </ul>
+          <p class="text-secondary-100 text-lg font-roboto font-bold mb-4 text-center mx-auto">THB 1,190</p>
+        </div>
       </div>
-      <div class="bg-primary-600 min-h-20 rounded-2xl shadow-2xl">
-        <div class="p-2 bg-primary-100 text-primary-900">Icons</div>
-      </div>
-    </div>
-    <div class="bg-accent-600 text-primary-900 p-4">
-      <h3>Accent</h3>
-    </div>
+    </section>
+
   </main>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module"
+          src="/src/main.js"></script>
 </body>
 
 </html>
