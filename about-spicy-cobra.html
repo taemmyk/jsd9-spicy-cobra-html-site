@@ -8,7 +8,7 @@
   <title>Spicy Cobra</title>
 </head>
 
-<body class="font-orbitron text-secondary-100 bg-primary-1000">
+<body class="text-secondary-100 bg-primary-1000">
   <header id="header">
     <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
       <div class="flex justify-between gap-x-4">
@@ -26,10 +26,12 @@
           </svg>
         </a>
       </div>
-      <h1
-        class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
-        Cobra
-      </h1>
+      <a href="index.html">
+        <h1
+          class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
+          Cobra
+        </h1>
+      </a>
       <div class="user-block flex justify-between gap-x-4">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -60,7 +62,7 @@
         </a>
       </div>
     </div>
-    <nav class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
+    <nav class="h-8 lg:h-16 bg-primary-400 lg:px-4 flex justify-between items-center">
       <ul
         class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase lg:text-2xl lg:font-roboto">
         <!-- Search -->
@@ -135,56 +137,129 @@
     </nav>
   </header>
 
-  <main class="bg-primary-1000 max-w-[80%] mx-auto">
-    <section class="bg-primary-900">
-      <div class="mx-auto max-w-[90%] grid lg:grid-cols-2 gap-8  pt-8 pb-8 sm:grid-cols-1">
-        <div class="bg-primary-600 p-6">
-          <h2 class="text-secondary-400  font-black text-xl mb-4 ">Yorem ipsum dolor sit amet consectetur
+  <main class="flex flex-col font-roboto">
+    <!-- About -->
+    <section class="about-block bg-primary-900">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 py-4 lg:py-8 mx-4 lg:max-w-[80%] lg:mx-auto">
+        <div class=" about-container-primary bg-primary-600 p-6">
+          <h2 class="text-secondary-600 font-orbitron font-black text-xl lg:text-2xl uppercase mb-4">About
           </h2>
-          <p class="font-roboto">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et
-            velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut
-            diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+          <p>Integer efficitur aliquam rutrum. Donec venenatis quis nisl id aliquet. Proin auctor, nulla ac placerat
+            euismod, risus urna rhoncus diam, quis fermentum tellus ipsum ut augue. Mauris id tortor felis. Pellentesque
+            augue justo.</p>
         </div>
-        <div class="bg-primary-600 p-6">
-          <h2 class="text-secondary-400  font-black text-xl mb-4">Yorem ipsum dolor sit amet consectetur
+        <div class="about-container-secondary bg-primary-600 p-6">
+          <h2 class="text-secondary-600 font-orbitron font-black text-xl lg:text-2xl uppercase mb-4">About
           </h2>
-          <p class="font-roboto">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et
-            velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut
-            diam quam, semper iaculis condimentum ac, vestibulum eu nisl.</p>
+          <p>Sodales ut condimentum a, aliquet sit amet nisl. Proin scelerisque metus vel tortor consectetur luctus eu
+            vitae nunc. Quisque ut interdum nisi, ut accumsan metus. Nulla ac nunc purus.</p>
         </div>
       </div>
     </section>
-    <section class="">
-      <div class="mx-auto max-w-[90%] grid lg:grid-cols-2 gap-8  pt-8 pb-8 sm:grid-cols-1">
-        <div class="bg-primary-600 p-6 rounded-2xl">
-          <h2 class="text-secondary-600  font-black text-xl mb-4">VALUES</h2>
-          <p class="font-roboto">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet
-            odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+
+    <!-- Values and Missions  -->
+    <section class="values-vision-block">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 py-4 lg:py-8 mx-4 lg:max-w-[80%] lg:mx-auto">
+        <div class="values-container bg-primary-900 p-6 rounded-2xl">
+          <h2 class="text-secondary-600 font-orbitron font-black text-xl lg:text-2xl uppercase mb-4">Values</h2>
+          <p>Vivamus eu sem non elit molestie interdum ut eu nulla. Curabitur ut faucibus lacus. Donec in bibendum
+            metus. Mauris nec turpis augue. Integer pretium ultricies est.</p>
         </div>
-        <div class="bg-primary-600 p-6 rounded-2xl">
-          <h2 class="text-secondary-600  font-black text-xl mb-4">VISION</h2>
-          <p class="font-roboto">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet
-            odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+        <div class="values-container bg-primary-900 p-6 rounded-2xl">
+          <h2 class="text-secondary-600 font-orbitron font-black text-xl lg:text-2xl uppercase mb-4">Vision</h2>
+          <p>Sed rutrum odio mattis sed. Nullam vehicula consequat velit ac fermentum. Vestibulum lobortis mauris eu
+            venenatis lacinia. Donec tempus ac ipsum a vehicula.</p>
         </div>
       </div>
     </section>
-    <section class="bg-primary-900  ">
-      <div class="mx-auto max-w-[90%] pt-4 pb-8">
-        <h2 class="text-secondary-600  font-black text-xl mb-4">MISSIONS</h2>
-        <div class="grid lg:grid-cols-3 gap-4 sm:grid-cols-1">
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
-          <div class="bg-[#d4d4d4] h-32 rounded-2xl"></div>
+
+    <!-- Missions -->
+    <section class="missions-block bg-primary-900">
+      <div class="pt-4 pb-8 mx-4 lg:max-w-[80%] lg:mx-auto">
+        <h2 class="text-secondary-600 font-black font-orbitron text-xl lg:text-2xl uppercase mb-4 ml-6 lg:ml-4">Missions
+        </h2>
+        <div class="grid gap-4 grid-cols-2 px-6 lg:px-4 lg:grid-cols-3">
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
+          <div class="bg-primary-600 h-32 rounded-2xl"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- community -->
+    <section class="community-section bg-primary-800 py-4 rounded-md text-secondary-100">
+      <h2
+        class="community-heading text-2xl lg:text-4xl text-secondary-600 mb-4 font-bold font-orbitron uppercase mx-4 lg:max-w-[80%] lg:mx-auto px-4">
+        Community</h2>
+      <div class="grid lg:grid-cols-2 mt-4 gap-4 mx-4 lg:max-w-[80%] lg:mx-auto">
+        <div class="flex flex-col rounded-lg bg-primary-100 text-primary-600 font-roboto">
+          <a href="#">
+            <img class="rounded-t-lg"
+              src="https://www.thailandgameshow.com/wp-content/uploads/2025/02/GAxTGS-2025-Banner-1640px-x-720px-1536x674.png"
+              alt="gamescom asia x Thailand Game Show" />
+          </a>
+          <div class="p-6">
+            <h5 class="mb-2 text-lg lg:text-2xl font-medium">gamescom asia x Thailand Game Show</h5>
+            <p class="mb-4 text-mg lg:text-xl">
+              After 4 successful editions in Singapore, gamescom asia moves to Bangkok, Thailand, and joining forces
+              with Thailand Game Show!</p>
+            <p class="mb-4 text-mg lg:text-xl">This merger brings together two powerhouse events, creating the biggest
+              B2B2C platform for the games industry in Southeast Asia and one of the biggest in the world. Get ready for
+              an expansive business area, an industry gaming conference, and an exciting entertainment area uniting game
+              industry professionals, publishers, and fans in one place.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex bg-primary-600 max-w-full h-full rounded-xl gap-4">
+            <img class="rounded-xl max-w-1/3"
+              src="https://scontent.futp1-1.fna.fbcdn.net/v/t39.30808-6/466590489_9076952339005321_1548521912187828570_n.png?_nc_cat=102&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=p8lNkqIEvl4Q7kNvgFW9MJI&_nc_oc=AdmOJK3G6j0-hJPAGurFfCtjYpfgMsqyTsXbEreo6atwfKE8qOP3QNc5TjpkPobSBOM&_nc_zt=23&_nc_ht=scontent.futp1-1.fna&_nc_gid=VmPBpGwQnUsA4ILTd11P8A&oh=00_AYGOZxR-_ivLoHmnmSU48Jzk4XMz9bpAuyu_DrftAP8Iew&oe=67EC390A"
+              alt="Thailand Game Festival" />
+            <div class="p-4">
+              <h5 class="mb-2 text-lg lg:text-xl lg:font-medium">Thailand Game Festival</h5>
+              <p class="hidden lg:block mb-2 text-base font-roboto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi tellus, sollicitudin sit amet rutrum
+                at.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex bg-primary-600 max-w-full h-full rounded-xl gap-4">
+            <img class="rounded-xl max-w-1/3"
+              src="https://scontent.futp1-1.fna.fbcdn.net/v/t39.30808-6/476229988_1042681004569032_7037010258408691095_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RIu2mIY0DuAQ7kNvgHfOlr_&_nc_oc=AdkyXdsdubUtxQLtRySBVL_4VaQ-BauwXfcX1i44WjA_6IJpI_-sboAo9QzlYP50-7U&_nc_zt=23&_nc_ht=scontent.futp1-1.fna&_nc_gid=A7J7kBOlf5PKsUuAkUZOHQ&oh=00_AYFqYTWygnJC-3Oh2kMUHTPOqR1tz-79yc4FHbHVX4C2aQ&oe=67EC436D"
+              alt="Game Talent Showcase 2025" />
+            <div class="p-4">
+              <h5 class="mb-2 text-lg lg:text-xl lg:font-medium">Game Talent Showcase 2025</h5>
+              <p class="hidden lg:block mb-2 text-base font-roboto">
+                Consectetur at lectus. Curabitur tincidunt, massa eu maximus cursus, nulla ante laoreet elit, eu aliquam
+                lacus sapien ut purus.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex bg-primary-600 max-w-full h-full rounded-xl gap-4">
+            <img class="rounded-xl max-w-1/3"
+              src="https://scontent.futp1-2.fna.fbcdn.net/v/t39.30808-6/473314352_1055676459937165_6823450838363237194_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TzpNrOBwCzcQ7kNvgGYprGe&_nc_oc=AdnKwYyAyoTtGgwLho_3tnk2QbTCE9L7KbReWs63FJOvFEs3RiRjMP6GKPK8ZsfYX80&_nc_zt=23&_nc_ht=scontent.futp1-2.fna&_nc_gid=zsyOMMMOw8yOj0z3M4c99g&oh=00_AYF1aF0T3kIdYkPtKFWZVZYapR1ZlBY57zSC4nRyS5Fjdw&oe=67EC22EA"
+              alt="depa ESPORTS TOURNAMENT: Online Tournament - RoV" />
+            <div class="p-4">
+              <h5 class="mb-2 text-lg lg:text-xl lg:font-medium">depa ESPORTS TOURNAMENT: Online Tournament - RoV</h5>
+              <p class="hidden lg:block mb-2 text-base font-roboto">
+                Integer eget nisi tincidunt, luctus ex sed, faucibus augue. Sed id convallis lectus.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pagination flex justify-center space-x-2 lg:space-x-4 mt-2 mb-4 lg:mt-4 lg:mb-8">
+        <img src="https://placehold.co/16x16/3E2F64/3E2F64" class="w-3 h-3 rounded-full">
+        <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
+        <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
+      </div>
       </div>
     </section>
   </main>
@@ -192,7 +267,7 @@
   <footer class="text-primary-100 bg-primary-400 font-roboto pt-8 px-4">
     <div class="flex flex-col lg:flex-row lg:gap-8 lg:justify-center lg:items-center">
       <div class="flex justify-around lg:justify-between lg:flex-col lg:items-center lg:w-1/2">
-        <img src="https://placehold.co/160x160/999/888?text=logo" class="w-20 h-20 lg:w-40 lg:h-40 rounded-full">
+        <img src="https://1drv.ms/i/c/f9ecf5de2c4d80a9/IQTZjpAAOgj4QadFgQm7nW5VAVGy3ayBF90_XeYUfNDoquQ?width=1024" class="w-20 h-20 lg:w-40 lg:h-40 rounded-full">
         <div class="social-media-links w-2/3 flex justify-evenly items-center lg:justify-between lg:my-4">
           <!-- Facebook -->
           <a href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
