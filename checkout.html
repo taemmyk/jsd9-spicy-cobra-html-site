@@ -7,7 +7,7 @@
     <title>Checkout Page</title>
 </head>
 
-<body class="font-orbitron text-secondary-100 bg-primary-1000">
+<body class="font-roboto text-secondary-100 bg-primary-1000">
     <header id="header">
         <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
             <div class="flex justify-between gap-x-4">
@@ -26,10 +26,12 @@
                     </svg>
                 </a>
             </div>
-            <h1
-                class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
-                Cobra
-            </h1>
+            <a href="index.html">
+                <h1
+                    class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
+                    Cobra
+                </h1>
+            </a>
             <div class="user-block flex justify-between gap-x-4">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -60,7 +62,7 @@
                 </a>
             </div>
         </div>
-        <nav class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
+        <nav class="h-8 lg:h-16 bg-primary-400 lg:px-4 flex justify-between items-center">
             <ul
                 class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase lg:text-2xl lg:font-roboto">
                 <!-- Search -->
@@ -139,60 +141,79 @@
         </nav>
     </header>
 
-    <main class="bg-primary-1000 max-w-[80%] mx-auto font-roboto">
+    <main class="bg-primary-1000">
         <!-- checkout 2 items -->
-        <section>
-            <h1 class="ml-8 pt-4 pb-3 font-bold font-orbitron text-secondary-600 text-2xl uppercase">Checkout 2 items
+        <section class="py-2 lg:py-4 mx-4 lg:max-w-[80%] lg:mx-auto">
+            <h1 class="text-secondary-600 font-black font-orbitron text-xl lg:text-2xl uppercase mb-4">Checkout 2 items
             </h1>
 
-            <div class="flex flex-row gap-8 ml-8 mr-8 mb-8">
+            <div class="flex flex-col lg:flex-row gap-4 lg:gap-6">
+
                 <!-- name & prices part-->
-                <div class="basis-1/2">
-                    <div class="grid grid-cols-3 pt-4 pb-4 justify-items-center bg-primary-600 rounded-2xl">
-                        <span class="">Lorem ipsum dolor sit amet.</span>
-                        <span class=""> THB 1,190 </span>
+                <div class="lg:w-2/3 flex flex-col space-y-4 lg:space-y-6">
+                    <div
+                        class="item-card grid grid-cols-5 lg:grid-cols-4 p-4 place-items-center bg-primary-600 rounded-2xl">
+                        <div class="col-span-3 lg:col-span-2 flex flex-col text-primary-100">
+                            <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                            <p class="text-sm">Edition B</p>
+                        </div>
+                        <div
+                            class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                            THB790
+                        </div>
                     </div>
-                    <br>
-                    <div class="grid grid-cols-3 pt-4 pb-4 justify-items-center bg-primary-600 rounded-2xl">
-                        <span class="">Lorem ipsum dolor sit amet.</span>
-                        <span class=""> THB 1,190 </span>
-                        <span class="">&#127873;</span>
+                    <div
+                        class="item-card grid grid-cols-5 lg:grid-cols-4 p-4 place-items-center bg-primary-600 rounded-2xl">
+                        <div class="col-span-3 lg:col-span-2 flex flex-col text-primary-100">
+                            <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                            <p class="text-sm">Edition B</p>
+                        </div>
+                        <div
+                            class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                            THB790
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-4 lg:size-6">
+                            <path
+                                d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
+                        </svg>
+                    </div>
+                    <div class="col-span-2 lg:col-span-3">
+                        <a href="./order.html"
+                            class="px-2 py-1 text-xl uppercase text-nowrap text-secondary-100 bg-primary-900 rounded-2xl">Edit Your Order</a>
                     </div>
                 </div>
 
                 <!-- payment & address part-->
-                <div class="basis-1/2 bg-primary-900 rounded-2xl">
-                    <div class="pl-4 pt-8 pr-4 pb-8 font-bold">
-                        <h3 class="pb-2 font-orbitron uppercase text-2xl text-secondary-100">Payment</h3>
-                        <div class="w-full h-6 mb-6 bg-secondary-100"></div>
-                        <h3 class="pb-2 font-orbitron uppercase text-2xl text-secondary-100">Address</h3>
-                        <div class="w-full h-16 mb-6 bg-secondary-100"></div>
-                        <h3 class="pb-4 font-orbitron uppercase text-2xl text-secondary-100">Total</h3>
+                <div class="lg:w-1/3 bg-primary-900 rounded-2xl">
+                    <div class="p-4 font-bold">
+                        <h3 class="font-orbitron uppercase text-xl">Payment</h3>
+                        <div class="w-full h-8 mb-6 bg-secondary-100"></div>
+                        <h3 class="font-orbitron uppercase text-xl">Address</h3>
+                        <div class="w-full h-24 mb-6 bg-secondary-100"></div>
+                        <h3 class="font-orbitron uppercase text-xl">Total</h3>
                         <div class="grid grid-cols-2 font-semibold">
-                            <span>Discount</span>
-                            <span> - </span>
-                            <span>Vat (7%)</span>
-                            <span> - </span>
+                            <p>Discount</p>
+                            <p> - </p>
+                            <p>Vat (7%)</p>
+                            <p> - </p>
+                            <br>
+                            <h3 class="font-orbitron uppercase text-xl">THB1,580</h3>
                         </div>
-                        <div class="grid grid-cols-2 mt-4 mb-10">
-                            <h3 class="pb-2 font-orbitron uppercase text-2xl text-secondary-100">Total</h3>
-                            <h3 class="pb-2 font-orbitron uppercase text-2xl text-secondary-100"> THB2,380 </h3>
-                        </div>
-                        <div class="flex flex-row justify-center mt-20">
+                        <div class="flex flex-row justify-center">
                             <a href="./index.html"
-                                class="w-auto p-1 text-2xl text-center font-semibold text-primary-900 uppercase bg-primary-100 rounded-2xl cursor-pointer">Confirm
-                                Order</a>
+                        class="mt-4 px-2 py-1 text-xl text-nowrap font-semibold text-primary-800 uppercase bg-primary-100 rounded-2xl cursor-pointer">Confirm Order</a>
                         </div>
+
                     </div>
                 </div>
-            </div>
         </section>
     </main>
 
     <footer class="text-primary-100 bg-primary-400 font-roboto pt-8 px-4">
         <div class="flex flex-col lg:flex-row lg:gap-8 lg:justify-center lg:items-center">
             <div class="flex justify-around lg:justify-between lg:flex-col lg:items-center lg:w-1/2">
-                <img src="https://placehold.co/160x160/999/888?text=logo"
+                <img src="https://1drv.ms/i/c/f9ecf5de2c4d80a9/IQTZjpAAOgj4QadFgQm7nW5VAVGy3ayBF90_XeYUfNDoquQ?width=1024"
                     class="w-20 h-20 lg:w-40 lg:h-40 rounded-full">
                 <div class="social-media-links w-2/3 flex justify-evenly items-center lg:justify-between lg:my-4">
                     <!-- Facebook -->
