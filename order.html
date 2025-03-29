@@ -7,7 +7,7 @@
     <title>Order Page</title>
 </head>
 
-<body class="font-orbitron text-secondary-100 bg-primary-1000">
+<body class="text-secondary-100 bg-primary-1000">
     <header id="header">
         <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
             <div class="flex justify-between gap-x-4">
@@ -26,10 +26,12 @@
                     </svg>
                 </a>
             </div>
-            <h1
-                class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
-                Cobra
-            </h1>
+            <a href="index.html">
+                <h1
+                    class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
+                    Cobra
+                </h1>
+            </a>
             <div class="user-block flex justify-between gap-x-4">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -60,7 +62,7 @@
                 </a>
             </div>
         </div>
-        <nav class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
+        <nav class="h-8 lg:h-16 bg-primary-400 lg:px-4 flex justify-between items-center">
             <ul
                 class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase lg:text-2xl lg:font-roboto">
                 <!-- Search -->
@@ -139,133 +141,124 @@
         </nav>
     </header>
 
-    <main class="bg-primary-1000 max-w-[80%] mx-auto font-roboto">
-        <!-- order section -->
-        <section class="mb-8">
-            <h1 class="ml-8 p-3 font-bold font-orbitron text-secondary-600 text-2xl uppercase">Your Order</h1>
-            <div class="ml-8 mr-8">
-                <!-- card 1 -->
-                <div class="flex flex-row gap-4 mb-8 bg-primary-600 rounded-2xl">
-                    <!-- image part -->
-                    <div class="basis-1/5 h-36 bg-secondary-100 rounded-tl-2xl rounded-bl-2xl"></div>
-
-                    <!-- name & buttons part -->
-                    <div class="basis-1/3 h-36">
-                        <div class="flex flex-col h-36">
-                            <div class="basis-1/2 content-center h-[18]">
-                                <span>Lorem ipsum dolor sit amet.</span>
-                            </div>
-                            <div class="flex basis-1/2 gap-4 content-start [h-18]">
-                                <button class="w-48 h-11 font-semibold text-primary-800 bg-accent-600 rounded-2xl">For
-                                    me</button>
-                                <button
-                                    class="w-48 h-11 font-semibold text-disabled-400 bg-disabled-600 rounded-2xl">For
-                                    Friend</button>
-                            </div>
+    <main class="flex flex-col font-roboto">
+        <div class="py-2 lg:py-4 mx-4 lg:max-w-[80%] lg:mx-auto">
+            <h2 class="text-secondary-600 font-black font-orbitron text-xl lg:text-2xl uppercase mb-4">
+                Your Order
+            </h2>
+            <div class="item-container flex flex-col space-y-4 lg:space-y-6">
+                <div
+                    class="item-entry-card bg-primary-600 rounded-2xl grid grid-cols-4 lg:grid-cols-5 place-items-center">
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1056600/header.jpg?t=1725192678"
+                        alt="Home Sweet Home Survive" class="hidden lg:block">
+                    <div class="item-detail-container col-span-2 flex flex-col p-1 lg:p-0">
+                        <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                        <p class="text-sm">Edition B</p>
+                        <div class="options-container flex gap-2 lg:gap-4 mt-2 lg:min-w-1/3">
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-primary-800 bg-accent-600 rounded-2xl cursor-pointer">For
+                                Me</button>
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-disabled-400 bg-disabled-600 rounded-2xl cursor-pointer">For
+                                Friend</button>
                         </div>
                     </div>
-
-                    <!-- - + x and price part -->
-                    <div class="basis-1/2 h-36">
-                        <div class="flex flex-row h-36 justify-center items-center text-center font-bold">
-                            <div class="flex flex-1/2 flex-row justify-center gap-20 ">
-                                <div
-                                    class="flex justify-center items-center w-10 h-10 text-primary-800 bg-primary-100 font-bold rounded-[50%]">
-                                    <span> - </span>
-                                </div>
-                                <div
-                                    class="flex justify-center items-center w-10 h-10 text-primary-800 bg-primary-100 font-bold rounded-[50%]">
-                                    <span> + </span>
-                                </div>
-                                <div
-                                    class="flex justify-center items-center w-10 h-10 text-primary-800 bg-negative-600 font-bold rounded-[50%]">
-                                    <span> x </span>
-                                </div>
-                            </div>
-                            <div class="flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-center">
-                                <span> THB 1,190 </span>
-                            </div>
-                        </div>
+                    <div class="modify-container flex justify-around gap-x-2 lg:gap-x-6">
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            -
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            +
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-negative-600 font-bold rounded-full cursor-pointer">
+                            x
+                        </button>
+                    </div>
+                    <div
+                        class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                        THB790
                     </div>
                 </div>
-
-                <!-- card 2 -->
-                <div class="flex flex-row gap-4 mb-8 bg-primary-600 rounded-2xl">
-                    <!-- image part -->
-                    <div class="basis-1/5 h-36 bg-secondary-100 rounded-tl-2xl rounded-bl-2xl"></div>
-
-                    <!-- name & buttons part -->
-                    <div class="basis-1/3 h-36">
-                        <div class="flex flex-col h-36">
-                            <div class="basis-1/2 content-center h-[18]">
-                                <span>Lorem ipsum dolor sit amet.</span>
-                            </div>
-                            <div class="flex basis-1/2 gap-4 content-start [h-18]">
-                                <button class="w-48 h-11 font-semibold bg-disabled-600 rounded-2xl">For me</button>
-                                <button class="w-48 h-11 font-semibold text-primary-800 bg-accent-600  rounded-2xl">For
-                                    Friend</button>
-                            </div>
+                <div
+                    class="item-entry-card bg-primary-600 rounded-2xl grid grid-cols-4 lg:grid-cols-5 place-items-center">
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1056600/header.jpg?t=1725192678"
+                        alt="Home Sweet Home Survive" class="hidden lg:block">
+                    <div class="item-detail-container col-span-2 flex flex-col p-1 lg:p-0">
+                        <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                        <p class="text-sm">Edition B</p>
+                        <div class="options-container flex gap-2 lg:gap-4 mt-2 lg:min-w-1/3">
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-disabled-400 bg-disabled-600 rounded-2xl cursor-pointer">For
+                                Me</button>
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-primary-600 bg-accent-600 rounded-2xl cursor-pointer">For
+                                Friend</button>
                         </div>
                     </div>
-
-                    <!-- - + x and price part -->
-                    <div class="basis-1/2 h-36">
-                        <div class="flex flex-row h-36 justify-center items-center text-center font-bold">
-                            <div class="flex flex-1/2 flex-row justify-center gap-20 ">
-                                <div
-                                    class="flex justify-center items-center w-11 h-11 text-primary-800 bg-primary-100 font-bold rounded-[50%]">
-                                    <span> - </span>
-                                </div>
-                                <div
-                                    class="flex justify-center items-center w-11 h-11 text-primary-800 bg-primary-100 font-bold rounded-[50%]">
-                                    <span> + </span>
-                                </div>
-                                <div
-                                    class="flex justify-center items-center w-11 h-11 text-primary-800 bg-negative-600 font-bold rounded-[50%]">
-                                    <span> x </span>
-                                </div>
-                            </div>
-                            <div class="flex flex-row flex-1/5 w-11 h-11 justify-center items-center text-center">
-                                <span> THB 1,190 </span>
-                            </div>
-                        </div>
+                    <div class="modify-container flex justify-around gap-x-2 lg:gap-x-6">
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            -
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            +
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-negative-600 font-bold rounded-full cursor-pointer">
+                            x
+                        </button>
+                    </div>
+                    <div
+                        class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                        THB790
                     </div>
                 </div>
             </div>
 
             <!-- continue shopping & total -->
-            <div class="flex flex-row ml-8 mr-8">
-                <div class="basis-1/2">
+            <div class="total-block rounded-2xl grid grid-cols-4 lg:grid-cols-5 mt-4 lg:mt-6">
+                <div class="col-span-2 lg:col-span-3">
                     <a href="./index.html"
-                        class="w-80 h-14 text-2xl uppercase text-balance text-secondary-100 bg-primary-700 rounded-2xl">continue
+                        class="px-2 py-1 text-xl uppercase text-nowrap text-secondary-100 bg-primary-900 rounded-2xl">continue
                         shopping</a>
                 </div>
-                <div class="basis-1/2">
-                    <div class="w-[130] h-[115] bg-primary-900 rounded-2xl">
-                        <h3 class="font-bold text-2xl pl-4 pt-6 pb-6">TOTAL</h3>
-                        <div class="grid grid-cols-2 gap-y-4 pl-4 font-semibold">
-                            <span>Discount</span>
-                            <span> - </span>
-                            <span>Vat (7%)</span>
-                            <span> - </span>
-                            <span>Total</span>
-                            <span>THB 2,380</span>
-                        </div>
-                        <div class="flex flex-row justify-center">
-                            <a href="./checkout.html"
-                                class="w-auto m-4 p-1 text-2xl text-center font-semibold text-primary-800 uppercase bg-primary-100 rounded-2xl cursor-pointer">Proceed
-                                to Checkout</a>
-                        </div>
-                    </div>
+                <div class="bg-primary-900 rounded-l-lg p-4 lg:p-6">
+                    <h4 class="font-bold font-orbitron text-2xl uppercase">Total</h4>
+                    <p>Discount</p>
+                    <p>Vat 7%</p>
+                    <br>
+                    <p>Total</p>
+                </div>
+                <div class="bg-primary-900 rounded-r-lg p-4 lg:p-6">
+                    <h4 class="font-bold text-2xl uppercase text-primary-900">Total</h4>
+                    <p>-</p>
+                    <p>-</p>
+                    <br>
+                    <p>THB1,580</p>
                 </div>
             </div>
+
+            <!-- to checkout -->
+            <div class="proceed-checkout-container rounded-2xl grid grid-cols-4 lg:grid-cols-5 my-4 place-items-center">
+                <div class="col-span-2 lg:col-span-3"></div>
+                <div class="col-span-2">
+                    <a href="./checkout.html"
+                        class="px-2 py-1 text-xl text-nowrap font-semibold text-primary-800 uppercase bg-primary-100 rounded-2xl cursor-pointer">Proceed
+                        to Checkout</a>
+                </div>
+            </div>
+        </div>
         </section>
     </main>
 
     <footer class="text-primary-100 bg-primary-400 font-roboto pt-8 px-4">
         <div class="flex flex-col lg:flex-row lg:gap-8 lg:justify-center lg:items-center">
             <div class="flex justify-around lg:justify-between lg:flex-col lg:items-center lg:w-1/2">
-                <img src="https://placehold.co/160x160/999/888?text=logo"
+                <img src="https://1drv.ms/i/c/f9ecf5de2c4d80a9/IQTZjpAAOgj4QadFgQm7nW5VAVGy3ayBF90_XeYUfNDoquQ?width=1024"
                     class="w-20 h-20 lg:w-40 lg:h-40 rounded-full">
                 <div class="social-media-links w-2/3 flex justify-evenly items-center lg:justify-between lg:my-4">
                     <!-- Facebook -->
