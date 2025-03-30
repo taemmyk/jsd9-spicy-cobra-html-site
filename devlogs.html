@@ -8,7 +8,7 @@
     <title>Spicy Cobra</title>
 </head>
 
-<body class="font-orbitron text-secondary-100 bg-primary-1000">
+<body class="text-secondary-100 bg-primary-1000 font-roboto">
     <header id="header">
         <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
             <div class="flex justify-between gap-x-4">
@@ -27,10 +27,12 @@
                     </svg>
                 </a>
             </div>
-            <h1
-                class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
-                Cobra
-            </h1>
+            <a href="index.html">
+                <h1
+                    class="font-orbitron uppercase font-bold text-2xl lg:text-4xl text-secondary-600 drop-shadow-[0px_0px_4px_rgba(0,255,179,1)]">
+                    Cobra
+                </h1>
+            </a>
             <div class="user-block flex justify-between gap-x-4">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -61,7 +63,7 @@
                 </a>
             </div>
         </div>
-        <nav class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
+        <nav class="h-8 lg:h-16 bg-primary-400 lg:px-4 flex justify-between items-center">
             <ul
                 class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase lg:text-2xl lg:font-roboto">
                 <!-- Search -->
@@ -139,366 +141,238 @@
         </nav>
         </nav>
     </header>
+    <main class="flex flex-col">
+        <section class="hero-block mb-4 lg:mb-8 w-full h-full lg:h-[600px] overflow-hidden">
+            <img src="https://gdconf.com/sites/default/files/Screenshot%202025-01-16%20at%209.54.22%E2%80%AFAM.png"
+                class="w-full h-auto object-cover object-center">
+        </section>
 
-    <section class="hero-block">
-        <img src="https://placehold.co/640x250/999/888?text=hero" class="w-full h-full">
-    </section>
-    <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center mb-4 lg:mb-8">
-        <div class="flex justify-between gap-x-4">
+        <section class="tag-navbar h-10 lg:h-16 bg-primary-400 px-4 hidden lg:flex justify-between items-center">
             <ul class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase
                 lg:text-2xl lg:font-roboto">
                 <li>
-                    <a href="./about-spicy-cobra.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-worm-icon lucide-worm w-6 h-6 text-primary-100 lg:hidden">
-                            <path d="m19 12-1.5 3" />
-                            <path d="M19.63 18.81 22 20" />
-                            <path
-                                d="M6.47 8.23a1.68 1.68 0 0 1 2.44 1.93l-.64 2.08a6.76 6.76 0 0 0 10.16 7.67l.42-.27a1 1 0 1 0-2.73-4.21l-.42.27a1.76 1.76 0 0 1-2.63-1.99l.64-2.08A6.66 6.66 0 0 0 3.94 3.9l-.7.4a1 1 0 1 0 2.55 4.34z" />
-                        </svg></a>
-                    <a href="#" class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Major Update</a>
+                    <div class="tag-link flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6 text-primary-100">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Major Update</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-newspaper w-6 h-6 text-primary-100 lg:hidden">
-                            <path d="M15 18h-5" />
-                            <path d="M18 14h-8" />
-                            <path
-                                d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-4 0v-9a2 2 0 0 1 2-2h2" />
-                            <rect x="10" y="6" width="8" height="4" rx="1" />
-                        </svg></a>
-                    <a href="#"
-                        class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Game Design</a>
+                    <div class="tag-link flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6 text-primary-100">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Game Design</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./game_categories.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-folder-open w-6 h-6 text-primary-100 lg:hidden">
-                            <path
-                                d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" />
-                        </svg></a>
-                    <a href="#" class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Tech Discussion</a>
+                    <div class="tag-link flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6 text-primary-100">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Tech Discussion</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="lucide lucide-badge w-6 h-6 text-primary-100 lg:hidden">
-                            <path
-                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
-                        </svg></a>
-                    <a href="#" class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Tutorial</a>
+                    <div class="tag-link flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6 text-primary-100">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Announcement</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="./devlogs.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-tag w-6 h-6 text-primary-100 lg:hidden">
-                            <path
-                                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-                        </svg></a>
-                    <a href="#"
-                        class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Announcement</a>
-                </li>
-                <li>
-                    <a href="./devlogs.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-tag w-6 h-6 text-primary-100 lg:hidden">
-                            <path
-                                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-                        </svg></a>
-                    <a href="#" class="hidden lg:block px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Marketing</a>
+                    <div class="tag-link flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6 text-primary-100">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Marketing</a>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </div>
-
-    <main class="bg-primary-1000 max-w-[80%] mx-auto">
-
-        <section class="bg-primary-900">
         </section>
 
-
-        <!-- Trending -->
-        <div class="bg-primary-800 py-5 pb-15 rounded-md text-white">
-            <h2 class="text-4xl text-secondary-600 ml-15 mb-10 font-bold font-orbitron uppercase">Trending</h2>
-            <div class="grid grid-cols-3  gap-10 mx-10">
-                <a href="./game_detail.html" class="game-card">
-                    <div class="relative flex-col ">
-                        <img src="https://images.crazygames.com/games/bloxdhop-io/cover_16x9-1709115453824.png?auto=format,compress&q=75&cs=strip"
-                            alt="" class="rounded-t-2xl transform-content">
-                        <div
-                            class="absolute top-2 left-2 bg-accent-400 font-bold font-roboto text-2xl rounded-md text-black">
-                            50%
-                        </div>
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-sm lg:text-2xl px-2">
-                            <span class="line-through text-md font-light">THB400</span> THB175
-                        </div>
+        <!-- Devlogs -->
+        <section class="devlogs-section bg-primary-800 py-4 rounded-md text-secondary-100">
+            <h2
+                class="devlogs-heading text-2xl lg:text-4xl text-secondary-600 mb-4 font-bold font-orbitron uppercase mx-4 lg:max-w-[80%] lg:mx-auto">
+                Devlogs</h2>
+            <div class="devlogs-container grid lg:grid-cols-3 gap-4 lg:gap-10 mx-4 lg:max-w-[80%] lg:mx-auto">
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1nLzIwNDcxODAzLmpwZw==/original/09HE0N.jpg"
+                            alt="Battle Background: Town" class="rounded-t-2xl w-full object-cover">
                     </div>
-                    <div class="flex justify-around  bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/free-gaming-logo-desing-template-design-e49aae86b270b33ecbef23513d84f5df_screen.jpg?ts=1632122859"
-                                alt="" class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Anubis</p>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Major Update</span>
                         </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">20,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">30,000</p>
+                        <h3 class="text-lg lg:text-xl">Battle Background: Town</h3>
+                        <h4 class="text-md lg:text-lg font-thin">Gothicvania Collection</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://pbs.twimg.com/profile_images/1272969808007626762/XhUQYtqO_400x400.png"
+                                alt="ansimuz" class="w-13 h-13 rounded-full object-cover">
+                            <span>ansimuz</span>
                         </div>
                     </div>
                 </a>
-
-                <div>
-                    <div class="relative flex-col  rounded-t-2xl">
-                        <img src="https://www.roadtovr.com/wp-content/uploads/2023/05/attack-titan-vr.jpg" alt=""
-                            class="rounded-t-2xl">
-                        <div
-                            class="absolute top-2 left-2 bg-accent-400 font-bold font-roboto text-2xl rounded-md text-black">
-                            50%
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/350x196%23cm/9WcUOE.png"
+                            alt="Patch Notes-1.1" class="rounded-t-2xl w-full object-cover">
+                    </div>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Major Update</span>
                         </div>
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            <span class="line-through text-md font-light">THB1,190</span> THB750
+                        <h3 class="text-lg lg:text-xl">Patch Notes-1.1</h3>
+                        <h4 class="text-md lg:text-lg font-thin">Solar Sandbox</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCxEebn7U-GMZyg4sljOOqODRDd6UA2EY-9g&s"
+                                alt="totoriel" class="w-13 h-13 rounded-full object-cover">
+                            <span>totoriel</span>
                         </div>
                     </div>
-                    <div class="flex justify-around   bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://play-lh.googleusercontent.com/OpzWImfnvtYvLxZt6tjNr9gFoaIp3frYHAo8Surxq1kXqXfHPXMKXaRYLWNkjwyODL8"
-                                alt="" class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">KOEI TECMO</p>
+                </a>
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1hZ2UvNzk1NDgxLzQ0NTM0NDAuanBn/350x196%23cm/93smb4.jpg"
+                            alt="5 Things you didn't know about Dwarf Mine" class="rounded-t-2xl w-full object-cover">
+                    </div>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Game Design</span>
                         </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9 object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">40,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">60,000</p>
+                        <h3 class="text-lg lg:text-xl">5 Things you didn't know about</h3>
+                        <h4 class="text-md lg:text-lg font-thin">Dwarf Mine</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_mSy6W39sMICqXHuuINngvP4QF9FV7bMO4r5idj_CbqWg=s160-c-k-c0x00ffffff-no-rj"
+                                alt="Paper Dice Games" class="w-13 h-13 rounded-full object-cover">
+                            <span>Paper Dice Games</span>
                         </div>
                     </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col   rounded-t-2xl">
-                        <img src="https://cdn2.unrealengine.com/egs-thehuntercallofthewildgreenhornbundle-expansiveworlds-bundles-s1-2560x1440-f6ec0fb4adf2.jpg"
-                            alt="" class="rounded-t-2xl">
-                        <div
-                            class="absolute top-2 left-2 bg-accent-400 font-bold font-roboto text-2xl rounded-md text-black">
-                            50%
+                </a>
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1nLzIwMzQ1Mjc1LnBuZw==/350x196%23cm/OAb%2Fzn.png"
+                            alt="Optimisation" class="rounded-t-2xl w-full object-cover">
+                    </div>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Tech Discussion</span>
                         </div>
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            <span class="line-through text-md font-light">THB800</span> THB380
+                        <h3 class="text-lg lg:text-xl">Optimisation</h3>
+                        <h4 class="text-md lg:text-lg font-thin">Shark Turtle</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://pbs.twimg.com/profile_images/928339899480240128/RMWHeTkx_400x400.jpg"
+                                alt="gingerbeardman" class="w-13 h-13 rounded-full object-cover">
+                            <span>gingerbeardman</span>
                         </div>
                     </div>
-                    <div class="flex  justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://yt3.googleusercontent.com/hTXVW566z_RWsHc8LUmazIKftLN-uUXeJ-l-4x5DkPhhnCZnrpo_htcciGH2XA5ceYNUWQnvnA=s900-c-k-c0x00ffffff-no-rj"
-                                alt="" class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Avalanche Studios</p>
+                </a>
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1nLzE5OTU5NzE4LnBuZw==/350x196%23cm/T%2BKqTT.png"
+                            alt="v1.08 Chinese Translation" class="rounded-t-2xl w-full object-cover">
+                    </div>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Announcement</span>
                         </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9 object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">80,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">140,000</p>
+                        <h3 class="text-lg lg:text-xl">v1.08 Chinese Translation</h3>
+                        <h4 class="text-md lg:text-lg font-thin">Dawntide</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://pbs.twimg.com/profile_images/1692910103194718208/h05gLAGW_400x400.jpg"
+                                alt="Choob" class="w-13 h-13 rounded-full object-cover">
+                            <span>Choob</span>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="#" class="devlog-card">
+                    <div class="devlog-header relative flex-col">
+                        <img src="https://img.itch.zone/aW1nLzIwNDI3NDAwLnBuZw==/350x196%23cm/e8RO9n.png"
+                            alt="Special Giveaway" class="rounded-t-2xl w-full object-cover">
+                    </div>
+                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
+                        <div class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-3 text-accent-600">
+                            <path fill-rule="evenodd"
+                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="text-accent-600 text-xs lg:text-sm">Marketing</span>
+                        </div>
+                        <h3 class="text-lg lg:text-xl">Special Giveaway</h3>
+                        <h4 class="text-md lg:text-lg font-thin">The Motel</h4>
+                        <div class="developer-info flex items-center gap-2">
+                            <img src="https://pbs.twimg.com/profile_images/1895194033888075776/iqkW1cX5_400x400.jpg"
+                                alt="Aura Studios" class="w-13 h-13 rounded-full object-cover">
+                            <span>Aura Studios</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
-
-        <!-- Games -->
-        <div class=" py-5 pb-15 rounded-md text-white">
-            <h2 class="text-4xl text-secondary-600 ml-15 mb-10 font-bold font-orbitron uppercase">Action</h2>
-            <div class="grid grid-cols-3  gap-10 mx-10">
-                <div>
-                    <div class="relative flex-col ">
-                        <img src="https://cms-assets.xboxservices.com/assets/f7/75/f7759371-ffd8-429c-b858-e3e3242fa547.jpg?n=343859994_GLP-Page-Hero-1084_1920x1080.jpg"
-                            alt="" class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            THB1999</div>
-                    </div>
-                    <div class="flex  justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-3 m-0">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYuopg0tpT-aaH-mTVCE-T2QF1ZyPWd5NPg&s"
-                                alt="" class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Anubis</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">20,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">100,000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col    rounded-t-2xl">
-                        <img src="https://img.youtube.com/vi/mDcVh5NJIVE/maxresdefault.jpg" alt=""
-                            class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2 pt-1">
-                            THB699</div>
-                    </div>
-                    <div class="flex  justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://www.colt.net/wp-content/uploads/2019/03/capcom-logo.png" alt=""
-                                class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Capcom</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">200,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">500,000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col    rounded-t-2xl">
-                        <img src="https://pub-f354ec240bea480db7320bd0e29d972e.r2.dev/sites/2/2025/02/1-3431ef6f1de736c52e6e-1024x576.jpg"
-                            alt="" class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            THB1990</div>
-                    </div>
-                    <div class="flex justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://www.colt.net/wp-content/uploads/2019/03/capcom-logo.png" alt=""
-                                class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Capcom</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">1,000,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">1,200,000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col ">
-                        <img src="https://cms-assets.xboxservices.com/assets/f7/75/f7759371-ffd8-429c-b858-e3e3242fa547.jpg?n=343859994_GLP-Page-Hero-1084_1920x1080.jpg"
-                            alt="" class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            THB1999</div>
-                    </div>
-                    <div class="flex  justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-3 m-0">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYuopg0tpT-aaH-mTVCE-T2QF1ZyPWd5NPg&s"
-                                alt="" class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Anubis</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">20,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">100,000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col    rounded-t-2xl">
-                        <img src="https://img.youtube.com/vi/mDcVh5NJIVE/maxresdefault.jpg" alt=""
-                            class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2 pt-1">
-                            THB699</div>
-                    </div>
-                    <div class="flex  justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://www.colt.net/wp-content/uploads/2019/03/capcom-logo.png" alt=""
-                                class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Capcom</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">200,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">500,000</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="relative flex-col    rounded-t-2xl">
-                        <img src="https://pub-f354ec240bea480db7320bd0e29d972e.r2.dev/sites/2/2025/02/1-3431ef6f1de736c52e6e-1024x576.jpg"
-                            alt="" class="rounded-t-2xl">
-                        <div
-                            class="absolute bg-primary-600 text-secondary-600 bottom-0 left-4 rounded-t-lg font-roboto text-2xl px-2">
-                            THB1990</div>
-                    </div>
-                    <div class="flex justify-around bg-primary-600 py-6  rounded-b-2xl ">
-                        <div class="flex gap-2 m-0">
-                            <img src="https://www.colt.net/wp-content/uploads/2019/03/capcom-logo.png" alt=""
-                                class="w-13 ml-3 rounded-[50%]">
-                            <p class="text-white mt-2">Capcom</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <img src="https://t4.ftcdn.net/jpg/05/54/76/53/360_F_554765365_GV87lL7ynZSvGDQt26BBsJ89hfrYfDzU.jpg"
-                                alt="" class="w-9 h-9  object-cover rounded-[50%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">1,000,000</p>
-                        </div>
-                        <div class="flex gap-2 mr-2">
-                            <img src="https://img.freepik.com/premium-vector/download-icon-vector-illustration-install-symbol_654297-207.jpg"
-                                alt="" class="w-9 h-7 object-cover rounded-[10%] mt-2">
-                            <p class="mt-3 text-sm font-roboto">1,200,000</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="pagination hidden lg:flex justify-center space-x-2 lg:space-x-4 mt-2 mb-4 lg:mt-4 lg:mb-8">
+                <img src="https://placehold.co/16x16/3E2F64/3E2F64" class="w-3 h-3 rounded-full">
+                <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
+                <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
             </div>
-        </div>
+        </section>
+
+
     </main>
 
     <footer class="text-primary-100 bg-primary-400 font-roboto pt-8 px-4">
         <div class="flex flex-col lg:flex-row lg:gap-8 lg:justify-center lg:items-center">
             <div class="flex justify-around lg:justify-between lg:flex-col lg:items-center lg:w-1/2">
-                <img src="https://placehold.co/160x160/999/888?text=logo"
+                <img src="https://1drv.ms/i/c/f9ecf5de2c4d80a9/IQTZjpAAOgj4QadFgQm7nW5VAVGy3ayBF90_XeYUfNDoquQ?width=1024"
                     class="w-20 h-20 lg:w-40 lg:h-40 rounded-full">
                 <div class="social-media-links w-2/3 flex justify-evenly items-center lg:justify-between lg:my-4">
                     <!-- Facebook -->
