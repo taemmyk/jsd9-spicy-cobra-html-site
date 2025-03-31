@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spicy Cobra | Devlogs</title>
-</head>
+    <title>Spicy Cobra | Your Order</title>
+  </head>
 
-<body class="text-secondary-100 bg-primary-1000 font-roboto">
+<body class="text-secondary-100 bg-primary-1000">
     <header id="header">
         <div class="h-10 lg:h-16 bg-primary-400 px-4 flex justify-between items-center">
             <div class="flex justify-between gap-x-4">
@@ -141,228 +141,116 @@
         </nav>
         </nav>
     </header>
-    <main class="flex flex-col">
-        <section class="hero-block mb-4 lg:mb-8 w-full h-full lg:h-[600px] overflow-hidden">
-            <img src="https://gdconf.com/sites/default/files/Screenshot%202025-01-16%20at%209.54.22%E2%80%AFAM.png"
-                class="w-full h-auto object-cover object-center">
-        </section>
 
-        <section class="tag-navbar h-10 lg:h-16 bg-primary-400 px-4 hidden lg:flex justify-between items-center">
-            <ul class="flex justify-between w-full px-4 items-center lg:gap-x-8 lg:justify-center lg:uppercase
-                lg:text-2xl lg:font-roboto">
-                <li>
-                    <div class="tag-link flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-6 text-primary-100">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Major Update</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tag-link flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-6 text-primary-100">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Game Design</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tag-link flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-6 text-primary-100">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Tech Discussion</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tag-link flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-6 text-primary-100">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Announcement</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tag-link flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-6 text-primary-100">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <a href="#" class="px-2 py-1 rounded-2xl text-primary-100 drop-shadow-lg">Marketing</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Devlogs -->
-        <section class="devlogs-section bg-primary-800 py-4 rounded-md text-secondary-100">
-            <h2
-                class="devlogs-heading text-2xl lg:text-4xl text-secondary-600 mb-4 font-bold font-orbitron uppercase mx-4 lg:max-w-[80%] lg:mx-auto">
-                Devlogs</h2>
-            <div class="devlogs-container grid lg:grid-cols-3 gap-4 lg:gap-10 mx-4 lg:max-w-[80%] lg:mx-auto">
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1nLzIwNDcxODAzLmpwZw==/original/09HE0N.jpg"
-                            alt="Battle Background: Town" class="rounded-t-2xl w-full object-cover">
-                    </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Major Update</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">Battle Background: Town</h3>
-                        <h4 class="text-md lg:text-lg font-thin">Gothicvania Collection</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://pbs.twimg.com/profile_images/1272969808007626762/XhUQYtqO_400x400.png"
-                                alt="ansimuz" class="w-13 h-13 rounded-full object-cover">
-                            <span>ansimuz</span>
+    <main class="flex flex-col font-roboto">
+        <section class="py-2 lg:py-4 mx-4 lg:max-w-[80%] lg:mx-auto">
+            <h2 class="text-secondary-600 font-black font-orbitron text-xl lg:text-2xl uppercase mb-4">
+                Your Order
+            </h2>
+            <div class="item-container flex flex-col space-y-4 lg:space-y-6">
+                <div
+                    class="item-entry-card bg-primary-600 rounded-2xl grid grid-cols-4 lg:grid-cols-5 place-items-center">
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1056600/header.jpg?t=1725192678"
+                        alt="Home Sweet Home Survive" class="hidden lg:block">
+                    <div class="item-detail-container col-span-2 flex flex-col p-1 lg:p-0">
+                        <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                        <p class="text-sm">Edition B</p>
+                        <div class="options-container flex gap-2 lg:gap-4 mt-2 lg:min-w-1/3">
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-primary-800 bg-accent-600 rounded-2xl cursor-pointer">For
+                                Me</button>
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-disabled-400 bg-disabled-600 rounded-2xl cursor-pointer">For
+                                Friend</button>
                         </div>
                     </div>
-                </a>
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1hZ2UvMjUzMzc1Mi8xODk4MzU5My5wbmc=/350x196%23cm/9WcUOE.png"
-                            alt="Patch Notes-1.1" class="rounded-t-2xl w-full object-cover">
+                    <div class="modify-container flex justify-around gap-x-2 lg:gap-x-6">
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            -
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            +
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-negative-600 font-bold rounded-full cursor-pointer">
+                            x
+                        </button>
                     </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Major Update</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">Patch Notes-1.1</h3>
-                        <h4 class="text-md lg:text-lg font-thin">Solar Sandbox</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCxEebn7U-GMZyg4sljOOqODRDd6UA2EY-9g&s"
-                                alt="totoriel" class="w-13 h-13 rounded-full object-cover">
-                            <span>totoriel</span>
-                        </div>
+                    <div
+                        class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                        THB790
                     </div>
-                </a>
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1hZ2UvNzk1NDgxLzQ0NTM0NDAuanBn/350x196%23cm/93smb4.jpg"
-                            alt="5 Things you didn't know about Dwarf Mine" class="rounded-t-2xl w-full object-cover">
-                    </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Game Design</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">5 Things you didn't know about</h3>
-                        <h4 class="text-md lg:text-lg font-thin">Dwarf Mine</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://yt3.googleusercontent.com/ytc/AIdro_mSy6W39sMICqXHuuINngvP4QF9FV7bMO4r5idj_CbqWg=s160-c-k-c0x00ffffff-no-rj"
-                                alt="Paper Dice Games" class="w-13 h-13 rounded-full object-cover">
-                            <span>Paper Dice Games</span>
+                </div>
+                <div
+                    class="item-entry-card bg-primary-600 rounded-2xl grid grid-cols-4 lg:grid-cols-5 place-items-center">
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1056600/header.jpg?t=1725192678"
+                        alt="Home Sweet Home Survive" class="hidden lg:block">
+                    <div class="item-detail-container col-span-2 flex flex-col p-1 lg:p-0">
+                        <h3 class="font-semibold text-lg">Home Sweet Home: Survive</h3>
+                        <p class="text-sm">Edition B</p>
+                        <div class="options-container flex gap-2 lg:gap-4 mt-2 lg:min-w-1/3">
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-disabled-400 bg-disabled-600 rounded-2xl cursor-pointer">For
+                                Me</button>
+                            <button
+                                class="w-24 lg:w-48 py-1 lg:py-2 font-semibold text-primary-600 bg-accent-600 rounded-2xl cursor-pointer">For
+                                Friend</button>
                         </div>
                     </div>
-                </a>
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1nLzIwMzQ1Mjc1LnBuZw==/350x196%23cm/OAb%2Fzn.png"
-                            alt="Optimisation" class="rounded-t-2xl w-full object-cover">
+                    <div class="modify-container flex justify-around gap-x-2 lg:gap-x-6">
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            -
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-primary-100 font-bold rounded-full cursor-pointer">
+                            +
+                        </button>
+                        <button
+                            class="flex justify-center items-center w-6 h-6 lg:w-8 lg:h-8 text-primary-800 bg-negative-600 font-bold rounded-full cursor-pointer">
+                            x
+                        </button>
                     </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Tech Discussion</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">Optimisation</h3>
-                        <h4 class="text-md lg:text-lg font-thin">Shark Turtle</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://pbs.twimg.com/profile_images/928339899480240128/RMWHeTkx_400x400.jpg"
-                                alt="gingerbeardman" class="w-13 h-13 rounded-full object-cover">
-                            <span>gingerbeardman</span>
-                        </div>
+                    <div
+                        class="price-container flex flex-row flex-1/5 w-10 h-10 justify-center items-center text-nowrap">
+                        THB790
                     </div>
-                </a>
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1nLzE5OTU5NzE4LnBuZw==/350x196%23cm/T%2BKqTT.png"
-                            alt="v1.08 Chinese Translation" class="rounded-t-2xl w-full object-cover">
-                    </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Announcement</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">v1.08 Chinese Translation</h3>
-                        <h4 class="text-md lg:text-lg font-thin">Dawntide</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://pbs.twimg.com/profile_images/1692910103194718208/h05gLAGW_400x400.jpg"
-                                alt="Choob" class="w-13 h-13 rounded-full object-cover">
-                            <span>Choob</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="devlog-card">
-                    <div class="devlog-header relative flex-col">
-                        <img src="https://img.itch.zone/aW1nLzIwNDI3NDAwLnBuZw==/350x196%23cm/e8RO9n.png"
-                            alt="Special Giveaway" class="rounded-t-2xl w-full object-cover">
-                    </div>
-                    <div class="devlog-info flex flex-col justify-start bg-primary-600 p-4 rounded-b-2xl ">
-                        <div class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="size-3 text-accent-600">
-                            <path fill-rule="evenodd"
-                                d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="text-accent-600 text-xs lg:text-sm">Marketing</span>
-                        </div>
-                        <h3 class="text-lg lg:text-xl">Special Giveaway</h3>
-                        <h4 class="text-md lg:text-lg font-thin">The Motel</h4>
-                        <div class="developer-info flex items-center gap-2">
-                            <img src="https://pbs.twimg.com/profile_images/1895194033888075776/iqkW1cX5_400x400.jpg"
-                                alt="Aura Studios" class="w-13 h-13 rounded-full object-cover">
-                            <span>Aura Studios</span>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
-            <div class="pagination hidden lg:flex justify-center space-x-2 lg:space-x-4 mt-2 mb-4 lg:mt-4 lg:mb-8">
-                <img src="https://placehold.co/16x16/3E2F64/3E2F64" class="w-3 h-3 rounded-full">
-                <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
-                <img src="https://placehold.co/16x16/674EA7/674EA7" class="w-3 h-3 rounded-full">
+
+            <!-- continue shopping & total -->
+            <div class="total-block rounded-2xl grid grid-cols-4 lg:grid-cols-5 mt-4 lg:mt-6">
+                <div class="col-span-2 lg:col-span-3">
+                    <a href="./index.html"
+                        class="px-2 py-1 text-xl uppercase text-nowrap text-secondary-100 bg-primary-900 rounded-2xl">continue
+                        shopping</a>
+                </div>
+                <div class="bg-primary-900 rounded-l-lg p-4 lg:p-6">
+                    <h4 class="font-bold font-orbitron text-2xl uppercase">Total</h4>
+                    <p>Discount</p>
+                    <p>Vat 7%</p>
+                    <br>
+                    <p>Total</p>
+                </div>
+                <div class="bg-primary-900 rounded-r-lg p-4 lg:p-6">
+                    <h4 class="font-bold text-2xl uppercase text-primary-900">Total</h4>
+                    <p>-</p>
+                    <p>-</p>
+                    <br>
+                    <p class="font-bold">THB1,580</p>
+                </div>
+            </div>
+
+            <!-- to checkout -->
+            <div class="proceed-checkout-container rounded-2xl grid grid-cols-4 lg:grid-cols-5 my-4 place-items-center">
+                <div class="col-span-2 lg:col-span-3"></div>
+                <div class="col-span-2">
+                    <a href="./checkout.html"
+                        class="px-2 py-1 text-xl text-nowrap font-semibold text-primary-800 uppercase bg-primary-100 rounded-2xl cursor-pointer">Proceed
+                        to Checkout</a>
+                </div>
             </div>
         </section>
     </main>
@@ -444,7 +332,8 @@
         </div>
         <p class="text-sm lg:text-lg lg:px-8 pt-1 lg:pt-2">© 2025 All Rights Reserved</p>
     </footer>
-    <script type="module" src="/src/main.js"></script>
+
+    <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
