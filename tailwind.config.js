@@ -1,3 +1,6 @@
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+
 module.exports = {
   content: [
     "./public/**/*.html", // Make sure your pages in the public folder are included
@@ -6,5 +9,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    tailwindcss(),
+  ],
 }
