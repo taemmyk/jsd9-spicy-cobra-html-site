@@ -1,3 +1,10 @@
 module.exports = {
-  content: ["./public/*.{html,js}", "./public/**/*.{html,js}", "./index.html"],
-};
+  content: [
+    "./public/**/*.html", // Make sure your pages in the public folder are included
+    "./src/**/*.{js,ts,jsx,tsx,html}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
